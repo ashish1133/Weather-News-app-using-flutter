@@ -4,7 +4,7 @@ import 'package:open_weather_example_flutter/src/Weather features/weather/domain
 import 'package:open_weather_example_flutter/src/Weather features/weather/domain/weather/weather_data.dart';
 
 final cityProvider = StateProvider<String>((ref) {
-  return 'Chennai';
+  return 'CHENNAI';
 });
 
 final currentWeatherProvider =
