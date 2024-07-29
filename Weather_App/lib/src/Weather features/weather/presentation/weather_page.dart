@@ -33,7 +33,7 @@ class WeatherPage extends StatelessWidget {
               Spacer(),
               HourlyWeather(),
               Spacer(),
-              ElevatedButton(
+              ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -42,12 +42,17 @@ class WeatherPage extends StatelessWidget {
                     ),
                   );
                 },
-                child: Text('News'),
+                icon: Icon(Icons.article), // Icon for the button
+                label: Text('News'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, // Button color
+                  backgroundColor: Colors.blueAccent, // Button color
                   foregroundColor: Colors.white, // Text color
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  textStyle: TextStyle(fontSize: 18),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12), // Rounded corners
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  elevation: 4, // Shadow
                 ),
               ),
               Spacer(),
